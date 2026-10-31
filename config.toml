@@ -1,0 +1,12 @@
+# Non-secret settings. Secrets (bot token, database password) go in .env.
+
+[database]
+# "cassandra" (127.0.0.1:9042) or "scylladb" (127.0.0.1:9043). The collector
+# writes to one backend; override per run with `hainm --backend scylladb ...`.
+backend = "cassandra"
+
+# Channels to archive. `uv run hainm channels` lists the IDs the bot can see.
+[[discord.channels]]
+label = "first channel"
+guild_id = 612725793990246445
+channel_id = 757949187815112836

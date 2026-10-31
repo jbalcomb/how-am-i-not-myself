@@ -1,0 +1,20 @@
+[project]
+name = "hainm"
+version = "0.1.0"
+description = "Collect, categorize and learn from messages across services."
+readme = "README.md"
+authors = [
+    { name = "Jim Balcomb", email = "jim.balcomb@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "discord-py>=2.4",
+    "scylla-driver>=3.29.12",
+]
+
+[project.scripts]
+hainm = "hainm:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
